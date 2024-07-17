@@ -10,3 +10,18 @@ Ordering Property: For any node N:
 
 All values in the left subtree are less than the value in N.
 All values in the right subtree are greater than the value in N.
+
+Basic Operations
+Search: To find a value, start from the root and compare it with the target value. Recursively or iteratively move to the left or right child based on the comparison.
+
+Insertion: To insert a value, find the correct location in the BST following the search logic and insert the new node there.
+
+Deletion: Deleting a node has three cases:
+
+Leaf Node: Simply remove the node.
+Node with One Child: Remove the node and replace it with its child.
+Node with Two Children: Find the in-order predecessor (largest in the left subtree) or in-order successor (smallest in the right subtree) to replace the node's value, then delete that predecessor/successor node.
+
+Time Complexity
+Average Case: O(log n) for search, insert, and delete operations (assuming a balanced tree).
+Worst Case: O(n) for search, insert, and delete operations (when the tree degenerates into a linked list).
